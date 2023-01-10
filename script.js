@@ -89,16 +89,39 @@ var finances = [
 console.log("Financial Analysis")
 console.log("-----------------------");
 let monthTotal = 0;
-let netProfit = 0;
-let netLosses = 0;
-for (let a= 0; finances.length>a;a++){
-    for (let b=0;finances[a].length>b;b++){
-        console.log("Total Months: ",finances.length);
-        
-        console.log(finances[b]);
-        /*for(c = 0;finances[a][b].length>c;c++){
-            monthTotal = finances[a][b]++;
-            console.log("Total Amount: ",monthTotal);
-        }*/
-    }
+let netProfitOrLoss = 0;
+let averageChangeProfitOrLoss = 0
+let decreaseLoss = 0;
+
+for (let a = 0; finances.length > a; a++){
+    monthTotal=finances.length;
+    let monthData = finances[a];
+    let numData = monthData[1];
+    netProfitOrLoss = numData+netProfitOrLoss;//Sums up every value in the finances array
+    //averageChangeProfitOrLoss = [];
 }
+console.log("Total Month:",monthTotal);//total months
+console.log("Profit/Loss:",netProfitOrLoss);
+console.log("Average Change:",averageData);
+console.log("Greatest Increase In Profits");
+
+
+
+// for (let b=0;finances[a].length>b;b++){
+//     console.log("Total Months: ",finances.length);
+
+//     console.log(finances[b]);
+//     /*for(c = 0;finances[a][b].length>c;c++){
+//         monthTotal = finances[a][b]++;
+//         console.log("Total Amount: ",monthTotal);
+//     }*/
+// }
+// let firstData = finances[0]; // ['Jan-2010', 867884]
+// let firstDataTitle = firstData[0];
+// let firstDataProfit = firstData[1];
+// let firstDataProfitShorthand = finances[0][1];
+
+
+// let groceryList = ['eggs', 'bacon', 'toast'];
+// let firstItem = groceryList[0]; // 'eggs'
+
